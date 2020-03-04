@@ -2,44 +2,59 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <title>Latitude vs Max temp</title>
+    <title>Latitude vs Cloudiness</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-          <div class="navbar-inner">
-            <a class="brand" href="homepage.html">Weather Visualization Home</a>
-            <ul class="nav">
-              <li class="active"><a href="compare.html">Comparison--</a></li>
-              <li class="active"><a href="homepage.html">Data--</a></li>
-              <li><a href="firstvisualization.html"> Latitude--</a></li>
-              <li><a href="secondvisualization.html"> Link--</a></li>
-              <li><a href="thirdvisualiztion.html"> Link--</a></li>
-              <li><a href="fourthvisualization.html">Link</a></li>
-            </ul>
-          </div>
-        </div>
-      </header>
+  <header>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="homepage.html">Weather Visualization Home</a>
+        <ul class="nav">
+          <li class="active"><a href="compare.html">Comparison--</a></li>
+          <li class="active"><a href="homepage.html">Data--</a></li>
+          <li><a href="firstvisualization.html"> Max Temp--</a></li>
+          <li><a href="secondvisualization.html"> Humidity--</a></li>
+          <li><a href="thirdvisualization.html"> Cloudiness--</a></li>
+          <li><a href="fourthvisualization.html">Windspeed</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
       <div class="container">
 
         <div class="page-header">
-            <h1>STEP 1: WHERE is your ideal temperature?</h1>
+            <h1>Cloudiness</h1>
             <br>
         </div>
 
         <div class="row">
-            The first thing we do when you work with us is randomly generate 4000 different coordinates around the world and connect them to the nearest city. 
-            
-            After removing duplicates, you end up with between 500-800 randomly selected posible vacation locations. We then pull that city's current weather forecasts, including: Temperature, windspeed, humidity, and cloud-cover forcasts. For many people temperature is make-or-break in where they decide to vacation, and it's also closely tied to where the location is in relation to the equator. While putting together our initial city data, we also pull in some statistics on the cities choosen. This Temperatures graph will show you the city's temperature versus their latitude (0 being the equator) so that you can see exactly how thorough we are being in our search for your perfect vacation spot.
+          <div class="col-md-8">
+          The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis we first pulled 
+          data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
 
+          After assemling the dataset we used matplotlib to plot various aspects of the weather vs. Latitude
             <img src="Images\Fig3.png" alt="Temp and Latitude" class ="img-responsive img-thumbnail pull-left" alt="Responsive image">
-            >
+            
         </div>
+      </div>
       
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 col-md-6 col-sm-4"><img src="Images\Fig1.png" alt="Temp and Latitude" class ="img-responsive img-thumbnail pull-left" alt="Responsive image"></div>
+          <div class="col-12 col-md-6 col-sm-4"><img src="Images\Fig2.png" alt="Temp and Latitude" class ="img-responsive img-thumbnail pull-left" alt="Responsive image"></div>
+      
+          <!-- Force next columns to break to new line at md breakpoint and up -->
+          
+      
+          <div class="col-12 col-md-6 col-sm-4"><img src="Images\Fig3.png" alt="Temp and Latitude" class ="img-responsive img-thumbnail pull-left" alt="Responsive image"></div>
+          <div class="col-12 col-md-6 col-sm-4"><img src="Images\Fig4.png" alt="Temp and Latitude" class ="img-responsive img-thumbnail pull-left" alt="Responsive image"></div>
+        </div>
+      </div>
     </div>
 
 </body>
